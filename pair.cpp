@@ -14,11 +14,15 @@ int main()
 
     // chaining of pair
 
-    pair<int, int> p1;
+    pair<int, pair<int,int>> p1;
 
     p1.first = 3;
-    //p1.second.first = 6;
-    // p1.second.second = 9;
+    p1.second.first = 6;
+    p1.second.second = 9;
+
+    cout<<p1.first<<endl;
+    cout<<p1.second.first<<endl;
+    cout<<p1.second.second<<endl;
 
     vector<pair<int, int>> v;       //constructing vector of pair
 
